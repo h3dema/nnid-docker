@@ -1,5 +1,5 @@
 # nnid-docker
-Docker to develop NNI (from Microsoft)
+Allows to create a docker container to develop NNI (from Microsoft). See in [this link](https://github.com/h3dema/nni) my version.
 
 
 ## to build:
