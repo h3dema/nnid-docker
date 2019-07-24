@@ -30,8 +30,6 @@ RUN pip3 install ipython jupyter matplotlib seaborn natsort tables tensorflow ke
 
 RUN cd /root/nni && make my-install
 
-RUN service ssh start
-
 RUN git config --global user.email "henriquemoura@hotmail.com"
 RUN git config --global user.name "h3dema"
 
@@ -40,3 +38,6 @@ RUN git config --global user.name "h3dema"
 # so downgrade it to 1.5, using:
 #
 # pip3 install tensorflow==1.5
+
+# hack to have ssh server running
+ENTRYPOINT service ssh start && bash
